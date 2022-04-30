@@ -21,7 +21,7 @@ public class UserRepositoryTest {
     @Test
     public void testAddNew(){
         User user = new User();
-        user.setEmail("ccccc@gmail.com");
+        user.setEmail("boafafc@gmail.com");
         user.setPassword("CCCCCCCCCC");
         user.setFirstname("TTTTTTTTTTT");
         user.setLastname("CCCCCCCCCCCCCCCC");
@@ -46,7 +46,7 @@ public class UserRepositoryTest {
         Integer userID = 1;
         Optional<User> optionalUser = userRepository.findById(userID);
         User user = optionalUser.get();
-        user.setPassword("HeheBoyyy");
+        user.setPassword("HeheBoyyyafa");
         userRepository.save(user);
 
         User updatedUser = userRepository.findById(userID).get();
@@ -55,7 +55,7 @@ public class UserRepositoryTest {
 
     @Test
     public void testGet(){
-        Integer userID = 2;
+        Integer userID = 5;
         Optional<User> optionalUser = userRepository.findById(userID);
         Assertions.assertThat(optionalUser).isPresent();
         System.out.println(optionalUser.get());
@@ -63,7 +63,7 @@ public class UserRepositoryTest {
 
     @Test
     public void testDelete(){
-        Integer userID = 2;
+        Integer userID = 1;
         userRepository.deleteById(userID);
 
         Optional<User> optionalUser = userRepository.findById(userID);
