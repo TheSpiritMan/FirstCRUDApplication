@@ -33,7 +33,7 @@ docker run -d -p 6033:3306 --name=mysql_docker --env="MYSQL_ROOT_PASSWORD=root" 
 - Using `-p` flag will publish the port of the container.
 - Using `--name` flag will assign custom_name to a container.
 - Using `--env` flag will set the environment to run the container.
-- Here `root` user is accessing the mysql server using passwd as `root`. And working in database named as `FirstCRUDApp`.
+- Here `root` user is accessing the mysql server using passwd `root`. And working in database named as `FirstCRUDApp`.
 - Remember the username and passwd of mysql must match to that set in `/src/main/resources/application.properties`.
 - Since the container is running in detached mode. Command to list the running container is:
 ```
