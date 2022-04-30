@@ -56,8 +56,8 @@ docker exec -i mysql_docker mysql -uroot -proot FirstCRUDApp < users_data.sql
 # Run and Link Our Project with mysql_docker container
 - Command to link: 
 ```
-docker run -t --link mysql_docker:mysql -p 8080:5555 thespiritman/firstcrudapplication:latest
+docker run -t --link mysql_docker:mysql -p 5555:5555 thespiritman/firstcrudapplication:latest
 ```
 - Using `--link` flag will link the container of our project with the container of mysql named as `mysql_docker`.
 - Since our project is initially running in port 5555. So using `-p` flag will forward the port to 8080 in our machine.
-- Now, visit the link `http://localhost:8080` in your browser. If everything goes well, the webpage must load.
+- Now, visit the link `http://localhost:5555` in your browser. If everything goes well, the webpage must load.
