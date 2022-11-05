@@ -16,8 +16,7 @@ docker build -t $IMAGE_NAME -f Dockerfile .
 - Docker Hub is a popular and public registry for the docker images.
 - Docker image of this project can be found in Docker Hub under my account.
 - Link to the image of this project in Docker Hub:
-  https://hub.docker.com/repository/docker/thespiritman/firstcrudapplication
-
+ [https://hub.docker.com/r/thespiritman/firstcrudapplication](https://hub.docker.com/r/thespiritman/firstcrudapplication)
 # Setup MySQL
 - Since this application is using MySQL as a database.So we also need to set it up.
 - We will use MySQL docker image.
