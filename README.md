@@ -48,7 +48,7 @@ docker exec -it mysql_docker bash
 - We can import our data into database.
 - Command to import:
 ```
-docker exec -i mysql_docker mysql -uroot -proot FirstCRUDApp < users_data.sql
+docker exec -i mysql_docker mysql -uroot -proot FirstCRUDApp < init_data/users_data.sql
 ```
 - Get bash of the container with above same command and check inside the FirstCRUDApp database.
 
