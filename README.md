@@ -58,5 +58,18 @@ docker exec -i mysql_docker mysql -uroot -proot FirstCRUDApp < init_data/users_d
 docker run -t --link mysql_docker:mysql -p 5555:5555 thespiritman/firstcrudapplication:latest
 ```
 - Using `--link` flag will link the container of our project with the container of mysql named as `mysql_docker`.
-- Since our project is initially running in port 5555. So using `-p` flag will forward the port to 8080 in our machine.
-- Now, visit the link `http://localhost:5555` in your browser. If everything goes well, the webpage must load.
+- Since our project is initially running in port 5555. So using `-p` flag will forward the port to 5555 in our machine.
+
+# Docker-Compose
+- `docker-compose.yml` can be found in the home directory. So we can easily build and start our container using it.
+
+- Command:
+    ```
+    docker-compose up -d
+    ```
+
+- It will take some time to build and load the container.
+
+
+# Check the Project
+- Visit the link `http://localhost:5555` in your browser. If everything goes well, the webpage must load.
